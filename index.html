@@ -2,9 +2,9 @@
 <html>
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Instagram Clone Editor</title>
+<title>Instagram Profile Clone</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,11 +14,11 @@
 
 <div class="container">
 
-<!-- LEFT EDITOR PANEL -->
+<!-- LEFT EDIT PANEL -->
 
 <div class="editor">
 
-<h2>Instagram Editor</h2>
+<h2>Profile Editor</h2>
 
 <label>Username</label>
 <input id="usernameInput">
@@ -35,15 +35,7 @@
 <label>Bio</label>
 <textarea id="bioInput"></textarea>
 
-<h3>Reel Insights</h3>
-
-<label>Views</label>
-<input id="viewsInput">
-
-<label>Likes</label>
-<input id="likesInput">
-
-<button onclick="updateProfile()">Update Profile</button>
+<button onclick="updateProfile()">Update</button>
 
 </div>
 
@@ -54,43 +46,88 @@
 
 <div class="phone">
 
+<div class="header">
+<h3 id="username">username</h3>
+</div>
+
+
 <div class="profile">
 
-<img src="assets/profile.jpg" id="profilePic">
-
-<h3 id="username">username</h3>
+<img src="images/profile.jpg" class="profilePic">
 
 <div class="stats">
 
-<span id="posts">0</span> posts  
-<span id="followers">0</span> followers  
-<span id="following">0</span> following  
+<div>
+<span id="posts">262</span>
+<p>posts</p>
+</div>
+
+<div>
+<span id="followers">965</span>
+<p>followers</p>
+</div>
+
+<div>
+<span id="following">11</span>
+<p>following</p>
+</div>
 
 </div>
 
-<p id="bio">Bio text</p>
+</div>
+
+
+<div class="bio">
+
+<b id="name">Gaming video creator</b>
+
+<p id="bio">
+MOM & DAD ❤️
+SCARFALL 2.0 ❤️
+</p>
 
 </div>
 
-<div class="reelInsights">
 
-<h4>Reel Insights</h4>
+<div class="dashboard">
+Professional dashboard
+</div>
 
-Views: <span id="views">0</span><br>
-Likes: <span id="likes">0</span>
+
+<div class="buttons">
+
+<button>Edit profile</button>
+<button>Share profile</button>
 
 </div>
+
+
+<div class="tabs">
+
+<span>⬛</span>
+<span>▶</span>
+<span>🔁</span>
+<span>📷</span>
+
+</div>
+
 
 <div class="grid">
 
 <div class="post"></div>
 <div class="post"></div>
 <div class="post"></div>
+
+<div class="post"></div>
+<div class="post"></div>
+<div class="post"></div>
+
 <div class="post"></div>
 <div class="post"></div>
 <div class="post"></div>
 
 </div>
+
 
 </div>
 
