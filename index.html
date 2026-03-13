@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Instagram Profile Editor</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Instagram Clone Editor</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <div class="container">
 
-<!-- LEFT CONTROL PANEL -->
+<!-- LEFT EDITOR PANEL -->
+
 <div class="editor">
 
-<h2>Profile Editor</h2>
+<h2>Instagram Editor</h2>
 
-<label>Name</label>
-<input type="text" id="nameInput" placeholder="Enter name">
-
-<label>Followers</label>
-<input type="number" id="followersInput">
+<label>Username</label>
+<input id="usernameInput">
 
 <label>Posts</label>
-<input type="number" id="postsInput">
+<input id="postsInput">
+
+<label>Followers</label>
+<input id="followersInput">
+
+<label>Following</label>
+<input id="followingInput">
 
 <label>Bio</label>
 <textarea id="bioInput"></textarea>
 
-<h3>Reel Insight</h3>
+<h3>Reel Insights</h3>
 
 <label>Views</label>
-<input type="number" id="viewsInput">
+<input id="viewsInput">
 
 <label>Likes</label>
-<input type="number" id="likesInput">
+<input id="likesInput">
 
-<button onclick="updateProfile()">Update</button>
+<button onclick="updateProfile()">Update Profile</button>
 
 </div>
 
 
 <!-- PHONE PREVIEW -->
+
+<div class="preview">
+
 <div class="phone">
 
-<div class="instagram">
+<div class="profile">
 
-<h3 id="name">username</h3>
+<img src="assets/profile.jpg" id="profilePic">
+
+<h3 id="username">username</h3>
 
 <div class="stats">
-<span id="posts">0</span> Posts |
-<span id="followers">0</span> Followers
+
+<span id="posts">0</span> posts  
+<span id="followers">0</span> followers  
+<span id="following">0</span> following  
+
 </div>
 
 <p id="bio">Bio text</p>
 
-<div class="reel">
+</div>
+
+<div class="reelInsights">
+
 <h4>Reel Insights</h4>
+
 Views: <span id="views">0</span><br>
 Likes: <span id="likes">0</span>
+
+</div>
+
+<div class="grid">
+
+<div class="post"></div>
+<div class="post"></div>
+<div class="post"></div>
+<div class="post"></div>
+<div class="post"></div>
+<div class="post"></div>
+
 </div>
 
 </div>
