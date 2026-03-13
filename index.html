@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram Profile Editor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LEFT CONTROL PANEL -->
+<div class="editor">
+
+<h2>Profile Editor</h2>
+
+<label>Name</label>
+<input type="text" id="nameInput" placeholder="Enter name">
+
+<label>Followers</label>
+<input type="number" id="followersInput">
+
+<label>Posts</label>
+<input type="number" id="postsInput">
+
+<label>Bio</label>
+<textarea id="bioInput"></textarea>
+
+<h3>Reel Insight</h3>
+
+<label>Views</label>
+<input type="number" id="viewsInput">
+
+<label>Likes</label>
+<input type="number" id="likesInput">
+
+<button onclick="updateProfile()">Update</button>
+
+</div>
+
+
+<!-- PHONE PREVIEW -->
+<div class="phone">
+
+<div class="instagram">
+
+<h3 id="name">username</h3>
+
+<div class="stats">
+<span id="posts">0</span> Posts |
+<span id="followers">0</span> Followers
+</div>
+
+<p id="bio">Bio text</p>
+
+<div class="reel">
+<h4>Reel Insights</h4>
+Views: <span id="views">0</span><br>
+Likes: <span id="likes">0</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
